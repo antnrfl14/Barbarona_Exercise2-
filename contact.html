@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Barbarona's Tech Shop</title>
+    <link rel="stylesheet" href="styles.css">
+    <link id="theme-link" rel="stylesheet" href="light theme.css">
+</head>
+<body>
+    <header>
+        <h1>Barbarona's Tech Shop</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="theme-switcher">
+            <button onclick="changeTheme('light theme.css')">Light Mode</button>
+            <button onclick="changeTheme('dark theme.css')">Dark Mode</button>
+            <button onclick="changeTheme('custom theme.css')">Custom Color Scheme</button>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h2>Contact Me</h2>
+            <p>1234567890</p>
+        </section>
+    </main>
+    <script>
+        function changeTheme(theme) {
+            document.getElementById('theme-link').setAttribute('href', theme);
+        }
+    </script>
+</body>
+</html>

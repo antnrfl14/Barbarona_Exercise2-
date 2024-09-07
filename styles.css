@@ -1,0 +1,113 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling for the body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Header styling */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+    animation: fadeIn 1s;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 0.5rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f0f0f0;
+    text-decoration: underline;
+}
+
+/* Main content styling */
+main {
+    padding: 2rem;
+    animation: slideIn 1s;
+}
+
+main section {
+    margin-bottom: 2rem;
+}
+
+/* Footer styling */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    transition: background-color 0.3s;
+}
+
+/* Animation definitions */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* Theme switcher */
+.theme-switcher {
+    margin-top: 1rem;
+}
+
+.theme-switcher button {
+    margin: 0 0.5rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    background: #444;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.theme-switcher button:hover {
+    background: #666;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    nav ul {
+        text-align: center;
+        margin: 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 0.5rem 0;
+    }
+}
